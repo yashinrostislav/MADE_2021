@@ -1,7 +1,7 @@
 def main():
     """bubble sort"""
     n = int(input())
-    lst = list(map(int, input().strip().split()))[:n]
+    lst = list(map(int, input().split()))
     for i in range(n - 1):
         for j in range(n - i - 1):
             if lst[j] > lst[j + 1]:
