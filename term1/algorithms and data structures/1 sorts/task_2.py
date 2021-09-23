@@ -23,6 +23,7 @@ def merge(lst_1, lst_2):
 
 
 def merge_sort(lst):
+    """returns merge-sorted list"""
     if len(lst) < 2:
         return lst
     else:
@@ -33,7 +34,6 @@ def merge_sort(lst):
 
 
 def main():
-    """merge sort"""
     _ = int(input())
     input_lst = list(map(int, input().strip().split()))
     arr_sorted = merge_sort(input_lst)

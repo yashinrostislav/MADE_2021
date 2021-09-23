@@ -25,6 +25,7 @@ def merge(lst_1, lst_2):
 
 
 def merge_sort(lst):
+    """returns merge-sorted list and count of inversions"""
     if len(lst) < 2:
         return lst, 0
     else:
@@ -36,7 +37,6 @@ def merge_sort(lst):
 
 
 def main():
-    """merge sort"""
     _ = int(input())
     input_lst = list(map(int, input().strip().split()))
     print(merge_sort(input_lst)[1])

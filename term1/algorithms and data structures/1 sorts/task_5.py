@@ -1,4 +1,5 @@
 def roman2arabic(roman):
+    """convetring roman numbers to arabic"""
     vocab = {"I": 1, "V": 5, "X": 10, "L": 50}
     arabic = vocab[roman[len(roman) - 1]]
     for d in range(len(roman) - 1):
@@ -10,6 +11,7 @@ def roman2arabic(roman):
 
 
 def arabic2roman(arabic):
+    """convetring arabic numbers to roman"""
     vocab = {50: "L", 40: "XL", 10: "X", 9: "IX", 5: "V", 4: "IV", 1: "I"}
     roman = ''
     while arabic > 0:
@@ -45,6 +47,7 @@ def merge(arr1, arr2):
 
 
 def merge_sort(list_to_sort):
+    """returns merge-sorted list"""
     if len(list_to_sort) < 2:
         return list_to_sort
     else:
