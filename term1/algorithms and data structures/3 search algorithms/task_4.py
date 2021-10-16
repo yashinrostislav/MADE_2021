@@ -4,7 +4,7 @@ def func(length_):
         return 0
     for a in arr:
         count += a // length_
-    return (count)
+    return count
 
 
 def bin_search(y, l, r):
