@@ -75,7 +75,7 @@ class KNearestNeighbor:
                 # not use a loop over dimension, nor use np.linalg.norm().          #
                 #####################################################################
                 # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-                dists[i, j] = np.sum(np.power((X[i] - self.X_train[j]), 2))
+                dists[i, j] = np.sqrt(np.sum(np.power((X[i] - self.X_train[j]), 2)))
                 # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
         return dists
 
@@ -99,7 +99,7 @@ class KNearestNeighbor:
             # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
             dists[i] = np.sum((self.X_train - X[i])**2, axis=1)
             # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-        return dists
+        return np.sqrt(dists)
 
     def compute_distances_no_loops(self, X):
 
@@ -131,7 +131,7 @@ class KNearestNeighbor:
         xy = X.dot(self.X_train.T)
         dists = x2 + y2 - 2 * xy
         # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-        return dists
+        return np.sqrt(dists)
 
     def predict_labels(self, dists, k=1):
         """
