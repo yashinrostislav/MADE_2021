@@ -1,0 +1,6 @@
+ssn,fname,lname,sex,salary,super_ssn,dno
+1,peter,skachovsky,m,1000,2,10
+2,ronald,dehaan,m,2000,4,10
+3,alina,petrova,f,1500,2,10
+4,sergey,paramonov,m,4000,,20
+5,andra,busoniu,f,2500,,30
