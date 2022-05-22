@@ -2,6 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ml_in_prod_2/yashinrostislav" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/term2/nlp/natural-language-processing" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/yarik/ml-in-prod" vcs="Git" />
   </component>
 </project>
